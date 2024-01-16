@@ -4,7 +4,7 @@ Um jogo da memória com o tema de Star Wars, criado usando a API JavaScript Web 
 
 Próximas Alterações:
 
-*Ranking do melhor tempo;
+[ ]- Ranking do melhor tempo;
 *Nível dois dificuldade;
 
 ![image](https://github.com/JhussyaraReis/jogo-da-memoria/assets/147738753/5ed7fab1-7e21-490b-811c-dde0b2a34b85)
