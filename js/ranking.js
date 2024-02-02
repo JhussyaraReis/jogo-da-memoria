@@ -1,7 +1,7 @@
 const arrayDados = Object.entries(localStorage);
-const form = document.querySelector(".tabela");
+const tabela = document.querySelector("body");
 
-console.log(form);
+console.log(tabela);
 
 function ordenarCompetidores(competidores) {
   const jogadoresOrdenados = competidores.sort(function (a, b) {
