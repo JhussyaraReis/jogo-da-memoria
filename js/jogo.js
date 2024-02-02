@@ -35,6 +35,7 @@ const checkJogo = () => {
         "Jogador"
       )} ..... Você Ganhou o Jogo!!! Seu tempo foi ${spanTimer.innerHTML}s`
     );
+    localStorage.removeItem("Jogador");
     window.location = "./ranking.html";
   }
 };
