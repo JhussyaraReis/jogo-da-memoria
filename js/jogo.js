@@ -26,11 +26,16 @@ const checkJogo = () => {
 
   if (cartasDesabilitadas.length == 20) {
     clearInterval(this.loop); // parando o timer
+    localStorage.setItem(
+      `${localStorage.getItem("Jogador")}`,
+      spanTimer.innerHTML
+    );
     alert(
       `PARABÉNS ${localStorage.getItem(
         "Jogador"
       )} ..... Você Ganhou o Jogo!!! Seu tempo foi ${spanTimer.innerHTML}s`
     );
+    window.location = "./ranking.html";
   }
 };
 
