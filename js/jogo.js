@@ -29,7 +29,7 @@ const checkJogo = () => {
     localStorage.setItem(
       `${localStorage.getItem("Jogador")}`,
       spanTimer.innerHTML
-    );
+    ); // Salvando pontuação do jogador pelo nome
     alert(
       `PARABÉNS ${localStorage.getItem(
         "Jogador"

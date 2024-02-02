@@ -1,18 +1,14 @@
 const arrayDados = Object.entries(localStorage);
-const tabela = document.querySelector("body");
-
-console.log(tabela);
 
 function ordenarCompetidores(competidores) {
   const jogadoresOrdenados = competidores.sort(function (a, b) {
-    return b[1] - a[1];
+    return a[1] - b[1]; // coloca na ordem crescente
   });
   return jogadoresOrdenados;
 }
 
-// ordenarCompetidores(arrayDados);
-
 function exibirRanking() {
+  const corpoTabela = document.querySelector("tbody");
   ordenarCompetidores(arrayDados).forEach((e, i) => {
     const tr = document.createElement("tr");
     const tdPosicao = document.createElement("td");
@@ -21,17 +17,11 @@ function exibirRanking() {
     tdNome.innerText = `${e[0]}`;
     const tdTempo = document.createElement("td");
     tdTempo.innerText = `${e[1]}`;
-    tr.appendChild(tdNome);
     tr.appendChild(tdPosicao);
+    tr.appendChild(tdNome);
     tr.appendChild(tdTempo);
+    corpoTabela.appendChild(tr);
   });
 }
 
 exibirRanking();
-
-/** Pegar tbody
- *  Criar tr
- *  criar td
- *  incluir texto
- *  adicionar na tbody
- */
