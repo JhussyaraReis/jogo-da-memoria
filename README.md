@@ -12,6 +12,6 @@ Um jogo da memória com o tema de Star Wars, criado usando a API JavaScript Web 
 
 # :hammer: Próximas Alterações
 
- - [ ] Criar ranking de pontuação;
+ - [x] Criar ranking de pontuação;
  - [ ] Nível 2 de dificuldade;
 
